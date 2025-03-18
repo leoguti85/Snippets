@@ -68,5 +68,10 @@ $ dvc stage add -n train \
                -M metrics.json \ 
                python src/train.py
 
-RUn the stages with 
+RUn the stages with (or editing dvc.yml)
 $ dvc repro               
+
+Commit changes
+git commit -m "initial run of the pipeline"
+
+$ git push; dvc push
