@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/723654227191331234/33cd124617914169ad3b29fc1071eb52/artifacts
+end_time: 1742285688429
+entry_point_name: ''
+experiment_id: '723654227191331234'
+lifecycle_stage: active
+run_id: 33cd124617914169ad3b29fc1071eb52
+run_name: Let test
+run_uuid: 33cd124617914169ad3b29fc1071eb52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742285684884
+status: 3
+tags: []
+user_id: leito

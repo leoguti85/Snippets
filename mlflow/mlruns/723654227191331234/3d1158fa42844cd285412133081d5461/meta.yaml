@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/723654227191331234/3d1158fa42844cd285412133081d5461/artifacts
+end_time: 1742285176408
+entry_point_name: ''
+experiment_id: '723654227191331234'
+lifecycle_stage: active
+run_id: 3d1158fa42844cd285412133081d5461
+run_name: casual-goose-191
+run_uuid: 3d1158fa42844cd285412133081d5461
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742285176376
+status: 4
+tags: []
+user_id: leito
