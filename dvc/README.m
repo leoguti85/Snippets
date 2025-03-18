@@ -52,3 +52,21 @@ $ git switch -c new_branch
 If yur rename the data in this branch, then you create a new version
 
 To be safe, whenever you call git checkout, you should always call dvc checkout as well.
+
+********** Create pipelines *******************
+
+Add stages and pipeline dependencies
+$ dvc stage add -n split \
+               -d data/diamonds.csv -d src/split.py \
+               -o data/train.csv -o data/test.csv \
+               python src/split.py
+
+Add training stages as well
+$ dvc stage add -n train \
+               -d data/train.csv -d data/test.csv -d src/train.py \
+               -o models/model.joblib \
+               -M metrics.json \ 
+               python src/train.py
+
+RUn the stages with 
+$ dvc repro               

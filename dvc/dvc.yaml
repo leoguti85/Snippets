@@ -1,0 +1,19 @@
+stages:
+  split:
+    cmd: python src/split.py
+    deps:
+    - data/diamonds.csv
+    - src/split.py
+    outs:
+    - data/test.csv
+    - data/train.csv
+  train:
+    cmd: python src/train.py
+    deps:
+    - data/test.csv
+    - data/train.csv
+    outs:
+    - models/model.joblib
+    metrics:
+    - metrics.json:
+        cache: false
